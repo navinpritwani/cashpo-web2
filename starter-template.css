@@ -1,0 +1,614 @@
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.theme-nav {
+    /* Label */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.theme-nav:hover {
+    color: #E88032;
+}
+
+.theme-btn {
+    background: #E88032;
+
+    /* Label */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    /* Default / White */
+    color: #FFFFFF;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 0 solid;
+    border-radius: 2em;
+}
+
+.theme-btn:hover {
+    background-color: #194C75;
+    color: #fff;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/imgs/hero-bg.png');
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.theme-h1 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 45px;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+    text-align: left;
+}
+
+.theme-p {
+    /* Description */
+    /* Body / Body 1 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(24, 25, 31, 0.7);
+}
+
+.hero-img {
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.theme-btn:active {
+    background: #194C75 !important;
+    color: #fff;
+}
+
+.process {
+    background-color: #159190;
+    margin-top: -4em;
+    padding-top: 16em;
+    padding-bottom: 6em;
+}
+
+.nav-top {
+    top: 0px;
+    z-index: 99;
+    position: absolute;
+    width: 90%;
+}
+
+.steps ul {
+    list-style-type: none;
+}
+
+.steps .list-group li {
+    padding: 1em;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.steps ul li img {
+    max-width: 50px;
+    margin-right: 1em;
+    float: left;
+    margin-top: 0.6em;
+    padding-bottom: 2.4em;
+}
+
+.steps ul li span {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(242, 247, 255, 0.7);
+}
+
+.steps ul li p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.dot-sep {
+    max-height: 100px;
+    margin-top: 0.6em;
+}
+
+.feature {
+    padding: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature .feature-item img {
+    max-width: 100px;
+    max-height: 90px;
+}
+
+.theme-h2 {
+    /* Headline */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+
+    /* identical to box height, or 133% */
+    text-align: center;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+}
+
+.feature .feature-item h2 {
+    margin-top: 0.5em;
+}
+
+.video {
+    padding-top: 4em;
+    background-image: url('assets/imgs/video-bg.png');
+    background-size: cover;
+    height: 38vw;
+}
+
+.eligible {
+    padding-top: 6em;
+    background-image: url('assets/imgs/eligible-bg.png');
+    background-size: cover;
+    padding-bottom: 6em;
+}
+
+.eligible-list {
+}
+
+ul.eligible-list li {
+    padding: 1.2em;
+    margin-bottom: 2em;
+    background-color: #F6F9FF;
+    border: 0 solid;
+    border-radius: 16px;
+    display: flex;
+}
+
+ul.eligible-list li img {
+    float: left;
+}
+
+ul.eligible-list li p {
+    margin-left: 2em;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.download-app {
+    margin-top: 4em;
+    padding-top: 4em;
+    background-color: #F2F7FF;
+}
+
+.download-app .form-group input {
+    float: left;
+    background-color: #E8E9EB;
+    max-width: 70%;
+    height: 3em;
+    border: 0 solid;
+    padding-left: 1.5em;
+}
+
+.download-app .form-group button {
+    height: 3.5em;
+    border-radius: 0;
+    border-left: 0px solid;
+    background-color: #E88032;
+    color: #fff;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.download-app .form-group {
+    margin-top: 1em;
+}
+
+.download-app h3 {
+    /* Get the App */
+    /* Subtitle / Subtitle 2 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+}
+
+.footer {
+    padding: 4em 2em;
+    background-color: #000000;
+}
+
+.footer ul {
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.footer ul li {
+    /* Download Now */
+    /* Body / Body 1 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    /* Default / White */
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+}
+
+.footer ul li:hover a {
+    text-decoration: underline;
+}
+
+.footer ul li a {
+    color: #fff;
+}
+
+.footer-logo {
+    margin-left: 1em;
+}
+
+.footer h3 {
+    /* Subtitle / Subtitle 2 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    /* Text / Gray 300 */
+    color: #D9DBE1;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.footer .theme-p {
+    padding-left: 1em;
+    padding-top: 1em;
+    color: rgba(217, 219, 225, 0.86);
+    opacity: 0.7;
+}
+
+section.video img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:1199px) {
+    section.video img {
+        width: 33%;
+    }
+}
+
+.her0-img {
+    max-width: 330px;
+    margin: auto;
+}
+
+@media only screen and (max-width:991px) {
+    .hero .her0-img {
+        width: 30%;
+    }
+
+    .process {
+        padding-top: 20em;
+    }
+
+    .steps ul li p {
+        font-size: 12px;
+    }
+
+    .steps ul li {
+        width: 60%;
+    }
+
+    .steps ul li img {
+        width: 20%;
+    }
+}
+
+.navtab {
+    background-color: #000;
+}
+
+.navtab .navbar-toggler-icon {
+    color: #fff;
+}
+
+.page-head {
+    background-image: url('assets/imgs/pagehead-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 16vw;
+    display: flex;
+}
+
+.page-head h1 {
+    margin: auto;
+    display: block;
+}
+
+.page-body {
+}
+
+.page-body .container {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.page-body .content h1 {
+    color: #194C75;
+    font-size: 24px;
+}
+
+.page-body .content ul li p {
+    margin-bottom: 0.3em;
+}
+
+.theme-nav.active {
+    color: #E88032 !important;
+    font-weight: 700;
+}
+
+.bg-thme {
+    background-color: #F6F9FF;
+}
+
+.team-img {
+    max-width: 100%;
+    padding: 1em;
+}
+
+.team-name {
+    /* Heading / H5 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* identical to box height, or 133% */
+    font-feature-settings: 'liga' off;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.team-name p {
+    /* Body / Body 1 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    /* Text / Gray 900 */
+    color: #18191F;
+    margin-top: 4px;
+}
+
+.contact-form .form-group label {
+    padding-top: 12px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    /* line-height: 64px */
+    /* identical to box height, or 320% */
+    color: #000000;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea,
+.contact-form .form-group select {
+    width: 65%;
+    float: right;
+    background-color: #fff;
+    border: 0 solid;
+    border-radius: 8px;
+    padding: 1em;
+    min-height: 50px;
+    margin-right: 2em;
+}
+
+.contact-form .form-group {
+    align-items: center;
+    margin-top: 2em;
+}
+
+.contact-form .theme-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 4em;
+}
+
+.map {
+}
+
+.map iframe {
+    min-height: 24vw;
+}
+
+.contact-col {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-col img {
+    float: left;
+    max-width: 90px;
+}
+
+.contact-col .theme-h2 {
+    margin-left: 1em;
+}
+
+.contact-col p {
+    padding-top: 0.5em;
+}
+
+#navbarsExampleDefault .dropdown-menu a.dropdown-item.active {
+    background-color: rgba(255, 255, 255, 0);
+    color: #E88032;
+    font-weight: 700;
+}
+
+.loan-hero {
+    background-image: url('assets/imgs/loan-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.loan-hero .content h1 {
+    color: #fff;
+}
+
+.loan-hero .content p {
+    color: rgba(255, 255, 255, 0.81);
+}
+
+.loan-hero img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -69px;
+    top: 0px;
+    margin: auto;
+}
+
+@media only screen and (max-width:767px) {
+    .loan-hero img {
+        display: none;
+    }
+}
+
+.page-body img {
+    width: 100%;
+}
+
+.career-form input,
+.career-form textarea,
+.career-form select {
+    background-color: #F6F9FF !important;
+}
+
+.faq-accord .card .card-header {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0 solid;
+}
+
+.faq-accord .card {
+    background-color: #fff;
+    border: 0 solid;
+}
+
+.faq-accord .card-header h2 {
+}
+
+.faq-accord .card .card-header h2 button {
+    /* What is Cashpo? */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+
+.faq-accord .card .card-header h2 button img {
+    max-width: 28px;
+    margin-left: 0.5em;
+}
+
+.faq-accord .card .card-body {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8) !important;
+    background-color: #F6F9FF;
+    border-radius: 12px;
+}
