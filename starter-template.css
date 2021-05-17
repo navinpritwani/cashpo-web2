@@ -324,12 +324,6 @@ ul.eligible-list li p {
 
     /* Text / Gray 300 */
     color: #D9DBE1;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 16px 0px;
 }
 
 .footer .theme-p {
@@ -370,6 +364,7 @@ section.video img {
 
     .steps ul li p {
         font-size: 12px;
+        line-height: 18px;
     }
 
     .steps ul li {
@@ -382,7 +377,7 @@ section.video img {
 }
 
 .navtab {
-    background-color: #000;
+    background-color: #1b4b70;
 }
 
 .navtab .navbar-toggler-icon {
@@ -611,4 +606,173 @@ section.video img {
     color: rgba(0, 0, 0, 0.8) !important;
     background-color: #F6F9FF;
     border-radius: 12px;
+}
+
+@media only screen and (max-width:575px) {
+    .nav-top {
+        /* width: 100% */
+        left: -2em;
+    }
+}
+
+.navbar-toggler-icon img {
+    margin-top: 2px;
+    width: 28px;
+}
+
+@media only screen and (max-width:575px) {
+    .nav-top #navbarsExampleDefault.navbar-collapse {
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    h1.theme-h1 {
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    .theme-p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .hero-img img {
+        width: 140px;
+        margin: auto;
+    }
+
+    .process {
+        padding-top: 10em;
+    }
+
+    .steps ul li img {
+        width: 40px;
+        padding-bottom: 1em;
+        margin-left: 6px;
+    }
+
+    .steps ul li {
+    }
+
+    .feature .theme-h1 {
+    }
+
+    .theme-h2 {
+        font-size: 18px;
+    }
+
+    .video {
+        height: 50vw;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 2em;
+    }
+
+    .eligible {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .download-app {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+        margin-top: 2em;
+    }
+
+    .download-app .form-group input {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .download-app .form-group button {
+        padding-left: 9em;
+        padding-right: 9em;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .download-app img {
+        width: 60%;
+    }
+
+    .footer {
+        padding-top: 2em;
+    }
+
+    .hero .starter-template {
+        text-align: center !important;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+
+    .hero .starter-template .theme-h1 {
+        text-align: center;
+    }
+
+    .hero .starter-template .theme-p {
+        text-align: center !important;
+    }
+
+    .hero .starter-template .theme-btn {
+        display: block;
+        float: none !important;
+        margin: auto;
+    }
+
+    .page-body .container {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .page-body .content .theme-h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .page-body img {
+        max-width: 80%;
+        padding-bottom: 1em;
+    }
+
+    .team-name {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .team-name p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contact-form .form-group input ,
+    .contact-form .form-group textarea,
+    .contact-form .form-group select {
+        max-width: 60%;
+        margin-right: 0;
+    }
+
+    .contact-info img {
+        max-width: 60px;
+    }
+
+    .map {
+        margin-top: 1em;
+    }
+}
+
+.page-body a {
+    color: #e67f3c;
+}
+
+.theme-h3 {
+    /* Subtitle / Subtitle 2 */
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
 }
