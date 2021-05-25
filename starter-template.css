@@ -128,7 +128,7 @@ body {
     margin-right: 1em;
     float: left;
     margin-top: 0.6em;
-    padding-bottom: 2.4em;
+    padding-bottom: 5.4em;
 }
 
 .steps ul li span {
@@ -774,5 +774,47 @@ section.video img {
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
+}
+
+@media only screen and (max-width:991px) {
+    .theme-nav {
+        font-size: 12px !important;
+    }
+
+    .hero {
+        margin-top: 3em;
+    }
+
+    nav .theme-btn {
+        font-size: 12px;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+
+    #navbarsExampleDefault {
+        flex-wrap: wrap;
+    }
+
+    .nav-top {
+        width: 97%;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .nav-top .navbar-brand img {
+        max-width: 80px;
+    }
+
+    .theme-p {
+        font-size: 12px;
+    }
+
+    .theme-h2 {
+        font-size: 18px;
+    }
+
+    .theme-h1 {
+        font-size: 24px;
+    }
 }
 }
