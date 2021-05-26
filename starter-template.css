@@ -610,8 +610,7 @@ section.video img {
 
 @media only screen and (max-width:575px) {
     .nav-top {
-        /* width: 100% */
-        left: -2em;
+        /* width: 100% !important */
     }
 }
 
@@ -815,6 +814,30 @@ section.video img {
 
     .theme-h1 {
         font-size: 24px;
+    }
+}
+
+.terms-condition p {
+}
+
+.terms-condition p span {
+    font-family: Manrope !important;
+    color: rgba(24, 25, 31, 0.7) ;
+}
+
+@media only screen and (max-width:991px) {
+    .terms-condition p span {
+        font-size: 12px !important;
+    }
+}
+
+.MsoNormal {
+    font-size: 16px;
+}
+
+@media only screen and (max-width:991px) {
+    .terms-condition p b span {
+        font-size: 16px !important;
     }
 }
 }
