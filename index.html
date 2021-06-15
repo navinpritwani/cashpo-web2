@@ -20,6 +20,14 @@
         .error {
             border: solid 2px red !important;
         }
+
+        @media screen and (max-width: 1260px) {
+           .footer ul{
+              flex-direction: column !important;
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -81,7 +89,7 @@
     </div>
 </div>
 <section class="process">
-    <div class="container">
+    <div class="container" style="overflow-x: hidden    ">
         <h1 class="theme-h1 text-white text-center">Our process is easier and shorter</h1>
         <div class="steps mt-5">
             <ul class="list-group justify-content-center flex-row">

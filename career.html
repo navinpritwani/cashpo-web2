@@ -21,6 +21,12 @@
         .error {
             border: solid 2px red !important;
         }
+
+        @media screen and (max-width: 1260px) {
+            .footer ul {
+                flex-direction: column !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +136,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary theme-btn" id="submit_career_form">Submit</button>
-                    <p class="font-weight-bold alert-success p-3 text-center m-2" id="form-success"
+                    <p class="font-weight-bold alert-success p-3 text-center m-2" id="  form-success"
                        style="display: none"> your request has been recorded</p>
                 </form>
             </div>
