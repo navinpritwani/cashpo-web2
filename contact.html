@@ -1,169 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Cashpo - Contact Us</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="starter-template.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar-expand-md navbar ml-5 mr-5 nav-top">
-            <a href="./" class="navbar-brand pt-3"><img src="assets/imgs/logo.png"/></a>
-            <button class="navbar-toggler navtab" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="assets/imgs/mdi_menu.svg"/></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto ml-3">
-                    <li class="nav-item active">
-                        <a class="nav-link theme-nav" href="responsible-lending.html">Responsible Lending </a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cashpo - Contact Us</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <!--   ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <style>
+        .error {
+            border: solid 2px red !important;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar-expand-md navbar ml-5 mr-5 nav-top">
+    <a href="./" class="navbar-brand pt-3"><img src="assets/imgs/logo.png"/></a>
+    <button class="navbar-toggler navtab" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="assets/imgs/mdi_menu.svg"/></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto ml-3">
+            <li class="nav-item active">
+                <a class="nav-link theme-nav" href="responsible-lending.html">Responsible Lending </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link theme-nav" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link theme-nav" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link theme-nav" href="#">Blogs</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link theme-nav active">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle theme-nav" href="http://example.com" id="dropdown01"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="Instant-loan.html">Instant Loans</a>
+                    <a class="dropdown-item" href="career.html">Career</a>
+                    <a class="dropdown-item" href="FAQ.html">FAQs</a>
+                </div>
+            </li>
+        </ul>
+        <button onclick="window.open('https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo')"
+                class="btn btn-outline-success my-2 my-sm-0 theme-btn">
+            Get App
+        </button>
+    </div>
+</nav>
+<section class="page-head">
+    <h1 class="theme-h1 text-white text-center">Let's Talk</h1>
+</section>
+<section class="page-body bg-thme">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-12">
+                <form class="contact-form" id="contact-form" name="submit-contact-form">
+                    <div class="form-group">
+                        <label for="contact_form_name">Name</label>
+                        <input type="text" id="contact_form_name" aria-describedby="emailHelp"
+                               name="name" placeholder="Enter your name" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_form_email">Email</label>
+                        <input type="email" class="form-control" id="contact_form_email"
+                               name="email" placeholder="Enter your email address"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_form_email">Mobile Number</label>
+                        <input type="text" class="form-control" id="contact_form_mobile"
+                               name="mobile" maxlength="10" placeholder="Enter your mobile number"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_form_msg">Message</label>
+                        <textarea placeholder="Enter your message" id="contact_form_msg" name="msg"></textarea>
+                    </div>
+                    <button id="submit-contact-form" class="btn btn-primary theme-btn">Submit</button>
+                    <p class="font-weight-bold alert-success p-3 text-center m-2" id="contact-form-success"
+                       style="display: none"> your request has been recorded</p>
+                </form>
+            </div>
+            <div class="text-center col-xl-6 col-12 mt-4">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
+                            width="100%" height="200" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-body">
+    <div class="container content mt-5 contact-info">
+        <div class="row mt-5">
+            <div class="col-md-4 col-xl-4 contact-col">
+                <img src="assets/imgs/ic_contact01.png"/>
+                <h3 class="theme-h2 text-left">Location : <p class="lead text-left theme-p">315, Ambuja City Center ,
+                    Vidhan Sabha Road , Raipur , CG, 492001</p></h3>
+            </div>
+            <div class="col-md-4 col-xl-4 contact-col">
+                <img src="assets/imgs/ic_contact02.png"/>
+                <h3 class="theme-h2 text-left">Email : <p class="lead text-left theme-p">info@cashpo.in</p></h3>
+            </div>
+            <div class="col-md-4 col-xl-4 contact-col">
+                <img src="assets/imgs/ic_contact03.png"/>
+                <h3 class="theme-h2 text-left">Phone : <p class="lead text-left theme-p">+91 8770414100</p></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="download-app">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-7 col-lg-7">
+                <h1 class="theme-h1">Get your Personal<br> Loan now</h1>
+                <p class="lead text-left theme-p">Download the app to manage your projects, keep track of the progress
+                    and complete tasks without procastinating. Stay on track and complete on time!</p>
+                <h3 class="text-left">Get the App</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formInput109" placeholder="Enter Email or Phone number">
+                    <button class="btn my-2 my-sm-0" type="submit">Get App Link</button>
+                </div>
+            </div>
+            <div class="text-center col-xl-5 col-lg-5">
+                <img src="assets/imgs/Mobile/iphone2.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-12 col-md-9">
+                <img src="assets/imgs/Mobile/white-logo.svg" class="footer-logo"/>
+                <ul class="list-group">
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo"
+                           target="_blank">Download App</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link theme-nav" href="about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link theme-nav" href="team.html">Our Team</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link theme-nav" href="#">Blogs</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link theme-nav active">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle theme-nav" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="Instant-loan.html">Instant Loans</a>
-                            <a class="dropdown-item" href="career.html">Career</a>
-                            <a class="dropdown-item" href="FAQ.html">FAQs</a>
-                        </div>
+                    <li>
+                        <a href="Instant-loan.html">Instant Loan</a>
                     </li>
                 </ul>
-                <button onclick="window.open('https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo')" class="btn btn-outline-success my-2 my-sm-0 theme-btn">
-                    Get App
-</button>
+                <ul class="list-group">
+                    <li>
+                        <a href="career.html">Career</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="Term&Condition.html">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="Privacy-policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="lead text-left theme-p text-white">© 2020 Cashpo. All rights reserved</p>
             </div>
-        </nav>
-        <section class="page-head">
-            <h1 class="theme-h1 text-white text-center">Let's Talk</h1>
-        </section>
-        <section class="page-body bg-thme">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-md-12">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Name</label>
-                                <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" class="form-control"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter your email address"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Mobile Number</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your mobile number"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Message</label>
-                                <textarea placeholder="Enter your message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary theme-btn">Submit</button>
-                        </form>
-                    </div>
-                    <div class="text-center col-xl-6 col-12 mt-4">
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xl-3 col-lg-4 col-12 col-md-3">
+                <h3 class="text-white text-left">Get the App</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo"
+                   target="_blank"><img src="assets/imgs/Download%20Badge/Layer%202.png"/></a>
             </div>
-        </section>
-        <section class="page-body">
-            <div class="container content mt-5 contact-info">
-                <div class="row mt-5">
-                    <div class="col-md-4 col-xl-4 contact-col">
-                        <img src="assets/imgs/ic_contact01.png"/>
-                        <h3 class="theme-h2 text-left">Location : <p class="lead text-left theme-p">315, Ambuja City Center , Vidhan Sabha Road , Raipur , CG, 492001</p></h3> 
-                    </div>
-                    <div class="col-md-4 col-xl-4 contact-col">
-                        <img src="assets/imgs/ic_contact02.png"/>
-                        <h3 class="theme-h2 text-left">Email : <p class="lead text-left theme-p">info@cashpo.in</p></h3> 
-                    </div>
-                    <div class="col-md-4 col-xl-4 contact-col">
-                        <img src="assets/imgs/ic_contact03.png"/>
-                        <h3 class="theme-h2 text-left">Phone : <p class="lead text-left theme-p">+91 8770414100</p></h3> 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="download-app">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-7 col-lg-7">
-                        <h1 class="theme-h1">Get your Personal<br> Loan now</h1>
-                        <p class="lead text-left theme-p">Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</p>
-                        <h3 class="text-left">Get the App</h3>
-                        <div class="form-group"> 
-                            <input type="text" class="form-control" id="formInput109" placeholder="Enter Email or Phone number">
-                            <button class="btn my-2 my-sm-0" type="submit">Get App Link</button>                             
-                        </div>
-                    </div>
-                    <div class="text-center col-xl-5 col-lg-5">
-                        <img src="assets/imgs/Mobile/iphone2.png"/>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-8 col-12 col-md-9">
-                        <img src="assets/imgs/Mobile/white-logo.svg" class="footer-logo"/>
-                        <ul class="list-group">
-                            <li>
-                                <a href="https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo" target="_blank">Download App</a>
-                            </li>
-                            <li>
-                                <a href="Instant-loan.html">Instant Loan</a>
-                            </li>
-                        </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a href="career.html">Career</a>
-                            </li>
-                            <li>
-                                <a href="FAQ.html">FAQs</a>
-                            </li>
-                            <li>
-                                <a href="Term&Condition.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="Privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
-                        <p class="lead text-left theme-p text-white">© 2020 Cashpo. All rights reserved</p>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-12 col-md-3">
-                        <h3 class="text-white text-left">Get the App</h3>
-                        <a href="https://play.google.com/store/apps/details?id=com.codenicely.bank.loan.instantloan.cashpo" target="_blank"><img src="assets/imgs/Download%20Badge/Layer%202.png"/></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.container -->
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+        </div>
+    </div>
+</section>
+<!-- /.container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>
