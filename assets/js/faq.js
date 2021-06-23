@@ -89,7 +89,7 @@ $(document).ready(function () {
                 for (var i = 0; i < faq_list.length; i++) {
                     html_str = `<div class="card-body mb-2" style="background-color: #F6F9FF">
                                     <p style="font-weight: bold">${faq_list[i].question}</p>
-                                    <p>${faq_list[i].answer}</p>
+                                    <p class="p-white-space">${faq_list[i].answer}</p>
                                 </div>`
                     elm.append(html_str)
                 }
