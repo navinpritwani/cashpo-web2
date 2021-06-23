@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // const BASE_URL = "https://api.cashpo.in/api"
-    const BASE_URL = "http://localhost:8000/api"
+    const BASE_URL = "https://api.cashpo.in/api"
+    // const BASE_URL = "http://localhost:8000/api"
 
     let $TEAM_DIV = $("#team-image-list");
 

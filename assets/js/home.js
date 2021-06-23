@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // const BASE_URL = "https://api.cashpo.in/api"
-    const BASE_URL = "http://localhost:8000/api"
+    const BASE_URL = "https://api.cashpo.in/api"
+    // const BASE_URL = "http://localhost:8000/api"
 
     const mail_format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
