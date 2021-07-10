@@ -19,8 +19,8 @@ $(document).ready(function () {
             console.log(response)
             let user_list = response.user_list
             for (var i = 0; i < user_list.length; i++) {
-                html_str = ` <div class="text-center col-6 col-xl-3 col-md-4">
-                <img src="${user_list[i].image_url}" class="team-img"/>
+                html_str = ` <div class="text-center col-12 col-xl-3 col-md-4">
+                <img src="${user_list[i].image_url}" class="team-img" style="height:260px"/>
                 <div class="team-name">${user_list[i].name}
                     <p> ${user_list[i].description} </p>
                 </div>
